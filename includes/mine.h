@@ -5,7 +5,7 @@
 ** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 17:43:56 2016 Thomas LE MOULLEC
-** Last update Wed Feb  3 00:13:09 2016 Thomas LE MOULLEC
+** Last update Wed Feb  3 14:47:20 2016 Thomas LE MOULLEC
 */
 
 #ifndef MINE_H_
@@ -16,6 +16,7 @@
 #include <sys/types.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /*my_lib*/
 void		my_put_nbr(int);
@@ -32,5 +33,11 @@ void            my_putstr(char *);
 /*client*/
 int		check_entries(int, char **);
 char		*glue_it(char *, int, char *);
+void            put_bin(char, int);
+
+/*client*/
+int		serv_it();
+void		sig_ok(int);
+void		sig_no(int);
 
 #endif

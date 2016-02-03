@@ -5,7 +5,7 @@
 ## Login   <le-mou_t@epitech.net>
 ## 
 ## Started on  Tue Feb  2 17:10:20 2016 Thomas LE MOULLEC
-## Last update Wed Feb  3 00:16:14 2016 Thomas LE MOULLEC
+## Last update Wed Feb  3 13:42:37 2016 Thomas LE MOULLEC
 ##
 
 NAME    =       serv
@@ -25,6 +25,8 @@ SRCS    =       $(PATH3)my_lib.c  	\
 SRCS2   =       $(PATH3)my_lib.c  	\
 		$(PATH3)my_assist.c	\
 		$(PATH2)main.c    	\
+		$(PATH2)glue_it.c	\
+		$(PATH2)check.c		\
 
 OBJS    =       $(SRCS:.c=.o)
 
