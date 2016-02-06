@@ -5,12 +5,12 @@
 ** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Wed Feb  3 10:38:32 2016 Thomas LE MOULLEC
-** Last update Wed Feb  3 10:38:55 2016 Thomas LE MOULLEC
+** Last update Wed Feb  3 20:44:57 2016 Thomas LE MOULLEC
 */
 
 #include "mine.h"
 
-char            *glue_it(char *stock, int pid, char *str)
+char            *glue_it(char *stock, int pid)
 {
   int           x;
 
@@ -23,7 +23,5 @@ char            *glue_it(char *stock, int pid, char *str)
       x *= 10;
   stock = put_nbr_str(stock, pid, 0, x);
   stock = my_strcar(stock, ':');
-  if (str != NULL || str[0] != '\0')
-    stock = my_strcat(stock, str, 0, 0);
   return (stock);
 }

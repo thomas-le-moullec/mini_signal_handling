@@ -5,7 +5,7 @@
 ## Login   <le-mou_t@epitech.net>
 ## 
 ## Started on  Tue Feb  2 17:10:20 2016 Thomas LE MOULLEC
-## Last update Wed Feb  3 13:42:37 2016 Thomas LE MOULLEC
+## Last update Sat Feb  6 15:24:03 2016 Thomas LE MOULLEC
 ##
 
 NAME    =       serv
@@ -36,7 +36,7 @@ IFLAGS  =       -I ./includes/
 
 CFLAGS  =       -W -Wall -Werror -Wextra $(IFLAGS)
 
-CC      =       gcc
+CC      =       gcc -g
 
 RM      =       rm -rf
 

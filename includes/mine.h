@@ -5,7 +5,7 @@
 ** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 17:43:56 2016 Thomas LE MOULLEC
-** Last update Wed Feb  3 14:47:20 2016 Thomas LE MOULLEC
+** Last update Sat Feb  6 12:39:02 2016 Thomas LE MOULLEC
 */
 
 #ifndef MINE_H_
@@ -32,12 +32,17 @@ void            my_putstr(char *);
 
 /*client*/
 int		check_entries(int, char **);
-char		*glue_it(char *, int, char *);
+char		*glue_it(char *, int);
 void            put_bin(char, int);
+int             ping_pong(char, int);
+void            go_ping(int);
 
-/*client*/
-int		serv_it();
+/*serveur*/
+char		*serv_it(char *);
 void		sig_ok(int);
-void		sig_no(int);
+int             pong_it(char *);
+void            print_pid();
+int		calc_in(int);
+int             calc_pid();
 
 #endif
