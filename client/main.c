@@ -5,7 +5,7 @@
 ** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 23:06:59 2016 Thomas LE MOULLEC
-** Last update Sat Feb  6 19:25:24 2016 Thomas LE MOULLEC
+** Last update Sun Feb  7 13:15:18 2016 Thomas LE MOULLEC
 */
 
 #include "mine.h"
@@ -51,7 +51,7 @@ void		put_bin(char c, int serv_pid)
       else
 	kill(serv_pid, SIGUSR1);
       i--;
-      usleep(10000);
+      usleep(1000);
     }
 }
 
@@ -68,7 +68,6 @@ int		main(int ac, char **av)
   if (check_entries(ac, av) == -1)
     return (-1);
   client_pid = getpid();
-  printf("client_pid => %d\n", client_pid);
   serv_pid = my_get_nbr(av[1]);
   if ((stock = malloc(sizeof(char))) == NULL)
     return (-1);
@@ -87,5 +86,6 @@ int		main(int ac, char **av)
   ping_pong('\0', serv_pid);
   if (stock != NULL)
     free(stock);
+  printf("Processus from PID : %d -- Done\n", client_pid);
   return (0);
 }

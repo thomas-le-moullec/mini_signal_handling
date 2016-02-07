@@ -5,7 +5,7 @@
 ** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 23:06:24 2016 Thomas LE MOULLEC
-** Last update Sat Feb  6 19:19:54 2016 Thomas LE MOULLEC
+** Last update Sat Feb  6 21:56:04 2016 Thomas LE MOULLEC
 */
 
 #include "mine.h"
@@ -58,39 +58,34 @@ int			pong_it(char *stock)
       signal(SIGUSR1, sig_ok);
       while (g_s_bit == 2);
       ret = calc_in(client_pid);
-      if (ret != -1)
+      if (ret == 0)
 	{
-	  if (ret == 0)
+	  if (stock != NULL)
 	    {
-	      if (stock != NULL)
-		{
-		  free(stock);
-		  stock = NULL;
-		}
-	      if ((stock = malloc(sizeof(char))) == NULL)
-		return (-1);
-	      stock = serv_it(stock);
-	      client_pid = my_get_nbr(stock);
-	      if (client_pid <= 0)
-		{
-		  while ((kill(client_pid, SIGUSR2)) == -1);
-		  exit(write(2, "Error Pid\n", 9));
-		}
+	      free(stock);
+	      stock = NULL;
 	    }
-	  if (ret != 0)
-	    {
-	      my_putchar(ret);
-	      ret = 0;
-	    }
+	  stock = NULL;
+	  if ((stock = malloc(sizeof(char) * 1)) == NULL)
+	    return (-1);
+	  *(stock) = '\0';
+	  client_pid = my_get_nbr(serv_it(stock));
+	  if (client_pid <= 0)
+	    exit(write(2, "Error Pid\n", 10));
+	}
+      if (ret != 0 && ret != -1)
+	{
+	  my_putchar(ret);
+	  ret = 0;
 	}
     }
   return (0);
 }
 
-int			calc_pid()
+int                     calc_pid()
 {
-  static int		i = 0;
-  static char		res = 0;
+  static int            i = 0;
+  static char           res = 0;
 
   if (i == 0)
     res = 0;
@@ -109,9 +104,9 @@ int			calc_pid()
   return (-1);
 }
 
-char			*serv_it(char *stock)
+char                    *serv_it(char *stock)
 {
-  int			ret;
+  int                   ret;
 
   ret = -1;
   while (42)
@@ -121,37 +116,12 @@ char			*serv_it(char *stock)
       while (g_s_bit == 2);
       ret = calc_pid();
       if (ret != -1)
-	{
-	  if (ret == 58)
+        {
+          if (ret == 58)
 	    return (stock);
-	  stock = my_strcar(stock, ret);
-	  ret = -1;
-	}
+          stock = my_strcar(stock, ret);
+          ret = -1;
+        }
     }
   return (NULL);
-}
-
-void		print_pid()
-{
-  int		serv_pid;
-
-  serv_pid = getpid();
-  my_putstr("PID: ");
-  my_put_nbr(serv_pid);
-  my_putchar('\n');
-}
-
-int		main()
-{
-  char		*stock;
-
-  print_pid();
-  stock = NULL;
-  if ((stock = malloc(sizeof(char))) == NULL)
-    return (-1);
-  stock = serv_it(stock);
-  pong_it(stock);
-  if (stock != NULL)
-    free(stock);
-  return (0);
 }
