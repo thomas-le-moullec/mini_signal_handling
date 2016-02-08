@@ -5,7 +5,7 @@
 ** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 23:06:59 2016 Thomas LE MOULLEC
-** Last update Mon Feb  8 13:06:30 2016 Thomas LE MOULLEC
+** Last update Mon Feb  8 15:15:17 2016 Thomas LE MOULLEC
 */
 
 #include "mine.h"
@@ -94,6 +94,5 @@ int		main(int ac, char **av)
     return (-1);
   if (stock != NULL)
     free(stock);
-  printf("Processus from PID : %d -- Done\n", client_pid);
   return (0);
 }
