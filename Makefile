@@ -5,14 +5,14 @@
 ## Login   <le-mou_t@epitech.net>
 ## 
 ## Started on  Tue Feb  2 17:10:20 2016 Thomas LE MOULLEC
-## Last update Sat Feb  6 20:55:31 2016 Thomas LE MOULLEC
+## Last update Mon Feb  8 10:54:00 2016 Thomas LE MOULLEC
 ##
 
-NAME    =       serv
+NAME    =       ./server/server
 
-NAME2   =       cli
+NAME2   =       ./client/client
 
-PATH1   =       ./serveur/
+PATH1   =       ./server/
 
 PATH2   =       ./client/
 
