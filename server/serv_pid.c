@@ -5,10 +5,24 @@
 ** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Sat Feb  6 20:54:21 2016 Thomas LE MOULLEC
-** Last update Sat Feb  6 21:53:53 2016 Thomas LE MOULLEC
+** Last update Mon Feb  8 13:22:45 2016 Thomas LE MOULLEC
 */
 
 #include "mine.h"
+
+char		*get_other_pid(char *stock)
+{
+  if (stock != NULL && *(stock) != '\0')
+    {
+      free(stock);
+      stock = NULL;
+    }
+  stock = NULL;
+  if ((stock = malloc(sizeof(char) * 1)) == NULL)
+    return (NULL);
+  *(stock) = '\0';
+  return (stock);
+}
 
 void            print_pid()
 {
@@ -32,6 +46,9 @@ int             main()
   stock = serv_it(stock);
   pong_it(stock);
   if (stock != NULL)
-    free(stock);
+    {
+      free(stock);
+      stock = NULL;
+    }
   return (0);
 }

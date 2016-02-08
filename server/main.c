@@ -5,7 +5,7 @@
 ** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 23:06:24 2016 Thomas LE MOULLEC
-** Last update Sat Feb  6 21:56:04 2016 Thomas LE MOULLEC
+** Last update Mon Feb  8 13:25:18 2016 Thomas LE MOULLEC
 */
 
 #include "mine.h"
@@ -60,16 +60,7 @@ int			pong_it(char *stock)
       ret = calc_in(client_pid);
       if (ret == 0)
 	{
-	  if (stock != NULL)
-	    {
-	      free(stock);
-	      stock = NULL;
-	    }
-	  stock = NULL;
-	  if ((stock = malloc(sizeof(char) * 1)) == NULL)
-	    return (-1);
-	  *(stock) = '\0';
-	  client_pid = my_get_nbr(serv_it(stock));
+          client_pid = my_get_nbr(serv_it(get_other_pid(stock)));
 	  if (client_pid <= 0)
 	    exit(write(2, "Error Pid\n", 10));
 	}
