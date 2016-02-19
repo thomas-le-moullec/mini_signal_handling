@@ -1,6 +1,0 @@
-void		handler_signal(int sig, siginfo_t *info, void *tp);
-
-struct sigaction act
-act.sa_flags = SA_SIGINFO
-act.sa_sigaction = &handler_signal
-sigaction(PID, &act, NULL);

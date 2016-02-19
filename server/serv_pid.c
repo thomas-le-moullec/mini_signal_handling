@@ -5,7 +5,7 @@
 ** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Sat Feb  6 20:54:21 2016 Thomas LE MOULLEC
-** Last update Fri Feb 19 09:35:51 2016 Thomas LE MOULLEC
+** Last update Fri Feb 19 10:58:39 2016 Thomas LE MOULLEC
 */
 
 #include "mine.h"
@@ -29,6 +29,7 @@ void            print_pid()
   int           serv_pid;
 
   serv_pid = getpid();
+  usleep(5);
   my_put_nbr(serv_pid);
   my_putchar('\n');
 }
