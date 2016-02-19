@@ -1,0 +1,27 @@
+/*
+** check.c for check in /home/le-mou_t/rendu/PSU_2015_minitalk
+** 
+** Made by Thomas LE MOULLEC
+** Login   <le-mou_t@epitech.net>
+** 
+** Started on  Wed Feb  3 10:39:58 2016 Thomas LE MOULLEC
+** Last update Wed Feb  3 10:40:27 2016 Thomas LE MOULLEC
+*/
+
+#include "mine.h"
+
+int             check_entries(int ac, char **av)
+{
+  int           cmpt;
+
+  cmpt = 0;
+  if (ac != 3)
+    return (-1);
+  while (av[1][cmpt] != '\0')
+    {
+      if (av[1][cmpt] < '0' || av[1][cmpt] > '9')
+        return (-1);
+      cmpt++;
+    }
+  return (0);
+}
