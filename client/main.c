@@ -5,7 +5,7 @@
 ** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 23:06:59 2016 Thomas LE MOULLEC
-** Last update Mon Feb  8 15:15:17 2016 Thomas LE MOULLEC
+** Last update Fri Feb 19 19:05:10 2016 Thomas LE MOULLEC
 */
 
 #include "mine.h"
@@ -51,7 +51,7 @@ void		put_bin(char c, int serv_pid)
       else
 	kill(serv_pid, SIGUSR1);
       i--;
-      usleep(1000);
+      usleep(10000);
     }
 }
 
