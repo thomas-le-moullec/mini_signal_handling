@@ -1,8 +1,6 @@
 ##
-## Makefile for Makefile in /home/le-mou_t/rendu/PSU_2015_minitalk
 ## 
 ## Made by Thomas LE MOULLEC
-## Login   <le-mou_t@epitech.net>
 ## 
 ## Started on  Tue Feb  2 17:10:20 2016 Thomas LE MOULLEC
 ## Last update Sat Feb 20 14:57:51 2016 Thomas LE MOULLEC

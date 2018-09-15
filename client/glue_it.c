@@ -1,8 +1,6 @@
 /*
-** glue_it.c for glue_it in /home/le-mou_t/rendu/PSU_2015_minitalk/client
 ** 
 ** Made by Thomas LE MOULLEC
-** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Wed Feb  3 10:38:32 2016 Thomas LE MOULLEC
 ** Last update Wed Feb  3 20:44:57 2016 Thomas LE MOULLEC

@@ -1,8 +1,6 @@
 /*
-** my_assist.c for my_assist in /home/le-mou_t/rendu/PSU_2015_minitalk/lib
 ** 
 ** Made by Thomas LE MOULLEC
-** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 23:02:44 2016 Thomas LE MOULLEC
 ** Last update Sat Feb  6 15:31:48 2016 Thomas LE MOULLEC

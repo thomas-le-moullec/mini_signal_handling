@@ -1,8 +1,6 @@
 /*
-** my_lib.c for my_lib in /home/le-mou_t/rendu/PSU_2015_minitalk/lib
 ** 
 ** Made by Thomas LE MOULLEC
-** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 22:57:16 2016 Thomas LE MOULLEC
 ** Last update Wed Feb  3 00:19:58 2016 Thomas LE MOULLEC

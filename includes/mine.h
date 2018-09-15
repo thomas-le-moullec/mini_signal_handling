@@ -1,8 +1,6 @@
 /*
-** mine.h for mine in /home/le-mou_t/rendu/PSU_2015_minitalk
 ** 
 ** Made by Thomas LE MOULLEC
-** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 17:43:56 2016 Thomas LE MOULLEC
 ** Last update Sun Feb 21 19:58:22 2016 Thomas LE MOULLEC

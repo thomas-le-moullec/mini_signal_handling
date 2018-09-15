@@ -1,8 +1,6 @@
 /*
-** main.c for main in /home/le-mou_t/rendu/PSU_2015_minitalk/server
 ** 
 ** Made by Thomas LE MOULLEC
-** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Tue Feb  2 23:06:24 2016 Thomas LE MOULLEC
 ** Last update Mon Feb  8 13:25:18 2016 Thomas LE MOULLEC

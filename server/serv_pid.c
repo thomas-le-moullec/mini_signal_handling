@@ -1,8 +1,6 @@
 /*
-** serv_pid.c for serv_pid in /home/le-mou_t/rendu/PSU_2015_minitalk/serveur
 ** 
 ** Made by Thomas LE MOULLEC
-** Login   <le-mou_t@epitech.net>
 ** 
 ** Started on  Sat Feb  6 20:54:21 2016 Thomas LE MOULLEC
 ** Last update Fri Feb 19 10:58:39 2016 Thomas LE MOULLEC
